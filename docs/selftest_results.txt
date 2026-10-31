@@ -1,0 +1,14 @@
+[drop] replayed or too-old counter 0
+initiator failed authentication (PSK mismatch?)
+[1] round trip
+[2] replay rejected
+[3] tampering rejected (ciphertext, tag, counter, every header field)
+[4] wrong key rejected
+[5] empty-payload segments (SYN/ACK) are protected too
+[6] nonce counters unique and strictly increasing over 100000 packets
+[7] reordering inside window accepted, replays still rejected
+[8] packets older than the window rejected
+[9] policy checks
+[10] authenticated DH handshake (fork + socketpair)
+
+selftest: 43 passed, 0 failed

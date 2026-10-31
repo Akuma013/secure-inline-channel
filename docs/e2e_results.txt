@@ -1,0 +1,15 @@
+== T1: normal operation (matching PSK), 2 MB transfer ==
+PASS: handshake completed
+PASS: file arrives intact (hashes equal)
+PASS: Device1 encrypted packets
+PASS: Device2 decrypted packets
+== T2: tampering is detected ==
+PASS: PC2 received nothing
+PASS: Device2 logged authentication failure
+== T3: wrong PSK => no session, no data ==
+PASS: handshake refused (PSK mismatch)
+PASS: no data passed without a valid session
+== T4: gateways down => selected traffic blocked (fail-closed) ==
+PASS: traffic blocked
+
+Results: 9 passed, 0 failed   (logs in /tmp/tmp.kIZYgB8aAe)
